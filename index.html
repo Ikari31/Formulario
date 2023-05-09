@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aula OBC</title>
+</head>
+<body>
+    
+    <div id = "cabeçalho">
+        <h1>Cadastro de Devs</h1>
+        <p>Complete abaixo com suas informações</p>
+    </div>
+<div class = "main">
+    <fieldset id="info">
+        <div id = "nome">
+            <label for="name">Nome: </label>
+            <input type="text" name="name" id="name" required>
+    
+            <label id = "subname" for="sobrenome"> Sobrenome: </label>
+            <input type="text" name="sobrenome" id="sobrenome">
+        </div>
+    </fieldset>
+    <br>
+
+    <div id = "div-email">
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+    </div>
+  
+    <div id = "date">
+        <label for="date">Coloque sua data de nascimento: </label>
+        <input type="date" name="data" id="data">
+    </div>
+
+    <div id = "dev-level">
+        <label for="senioridade">Senioridade</label>
+        <select name="senioridade" id="senioridade">
+            <option selected disabled value="">Escolha...</option>
+            <option value="junior">Junior</option>
+            <option value = "pleno">Pleno</option>
+            <option value="senior">Senior</option>
+        </select>
+    </div>
+    
+    <br>
+
+    <div id = "dev">
+        <label id = "label-dev" for="dev">Qual o seu lado para desenvolver software ?</label>
+
+        <input type="radio" name="devweb" id="frontend">
+        <label id = "label-front" for="frontend">Front-End</label>
+
+        <div>
+            <input type="radio" name="devweb" id="backend"> 
+            <label id = "label-back" for="backend">Back-End</label>
+        </div>
+
+        <input type="radio" name="devweb" id="fullstack">
+        <label id= "label-full" for="fullstack">Full Stack </label>
+        
+
+    </div>
+    <br>
+    
+    <fieldset id = "languages">
+        <label id = "titulo-lingugens" for="languages">Escolha as linguagens que você utiliza ?</label>
+        <div class = "linguagens">
+            <input type="checkbox" name="linguagem1" id="linguagem1" value = "html">
+            <label for="html">HTML</label>
+            <input type="checkbox" name="linguagem2" id="linguagem2" value = "css">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="linguagem3" id="linguagem3" value = "js">
+            <label for="js">JavaScript</label>
+            <input type="checkbox" name="linguagem4" id="linguagem4" value = "python">
+            <label for="python">Python</label>
+            <input type="checkbox" name="linguagem5" id="linguagem5" value = "java">
+            <label for="java">Java</label>
+            <input type="checkbox" name="linguagem6" id="linguagem6" value = "c#">
+            <label for="c#">C#</label>
+        </div>
+        
+    </fieldset>
+    
+    <br>
+    <label for="sobre-vc">Conte sobre sua carreira Dev:</label>
+    <br>
+    <textarea name="sobre-vc" id="sobre-vc" cols="50" rows="10" placeholder="Conte nos..."></textarea>
+    <br>
+    <button type="submit">Envie</button>
+</div>
+</body>
+</html>
